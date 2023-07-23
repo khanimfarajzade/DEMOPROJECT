@@ -131,6 +131,32 @@ header .navbar .leftArea .watchlist .opacity,
 header .navbar .rightArea .watchlist .opacity {
   opacity: 1;
 }
+header .mobilNavbar {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  header .navbar {
+    display: none;
+  }
+  header .mobilNavbar {
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+  }
+  header .mobilNavbar .hamburger {
+    font-size: 24px;
+  }
+  header .mobilNavbar .leftMenu {
+    position: absolute;
+    background-color: #1F1F1F;
+    width: 260px;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+}
 
 .signInWindow {
   transition: 500ms;

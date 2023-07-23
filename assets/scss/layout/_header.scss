@@ -100,5 +100,36 @@ header {
       }
     }
   }
+  .mobilNavbar{
+    display: none;
+  }
+
+  @media screen and (max-width: 768px) {
+    .navbar{
+      display: none;
+    }
+    .mobilNavbar{
+      padding-top: 50px;
+      display: flex;
+      justify-content: space-between;
+      position: relative;
+      //height: 100%;
+      .hamburger{
+        font-size: 24px;
+      }
+      .leftMenu{
+        position: absolute;
+        background-color: #1F1F1F;
+        width: 260px;
+        //max-height: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: 1;
+      }
+
+    }
+  }
+
 }
 
