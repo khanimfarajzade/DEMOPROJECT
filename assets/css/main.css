@@ -151,10 +151,15 @@ header .mobilNavbar {
     position: absolute;
     background-color: #1F1F1F;
     width: 260px;
-    height: 100%;
+    height: 100vh;
     top: 0;
     left: 0;
     z-index: 1;
+  }
+  header .mobilNavbar .leftMenu select {
+    border: none;
+    background-color: #1F1F1F;
+    color: #ffffff;
   }
 }
 
