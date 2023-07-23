@@ -1,6 +1,6 @@
 header {
- // padding: 100px 0;
-   height: 320px;
+  //opacity: 0.8;
+  height: 320px;
   background-image: url("../imgs/Header-Area.png");
   background-position: center;
   background-size: cover;
@@ -17,26 +17,88 @@ header {
       display: flex;
       justify-content: space-between;
       gap: 20px;
-      ul {
-        display: flex;
-        gap: 10px;
+      .menu {
+        position: relative;
+        .menuList {
+          display: flex;
+          gap: 10px;
+          #lang:hover {
+            .langList {
+              height: 60px;
+              background-color: rgba(255, 255, 255, 0.3);
+              li:hover {
+                color: #0ff7f0;
+              }
+            }
+          }
+        }
+        .langList {
+          overflow: hidden;
+          text-align: center;
+          right: -10px;
+          padding: 5px;
+          position: absolute;
+          // border: 1px solid blue;
+          width: 40px;
+          background-color: transparent;
+          //  background-color: rgba(255, 255, 255, 0.3);
+          border-radius: 10px;
+          transition: 500ms;
+          height: 0;
+        }
       }
+
       .menu,
       .watchlist,
       .signIn {
         border-radius: 10px;
         padding: 10px;
         border: none;
-        //border: 2px solid #fff;
         background-color: rgba(255, 255, 255, 0.3);
-        //background-color: #FFFFFF;
-        // opacity: 0.5;
-
-        //          border-image: linear-gradient( #0FF7F0 , #D686FF) 40;
-        //          border-width: 4px;
-
-        // border-style: solid;
+        
+      }
+      .watchlist{
+        position: relative;
+        
+        .movies{
+          border-radius: 10px;
+          padding: 10px;
+          right: 0;
+          width: 230px;
+          position: absolute;
+          background-color: rgba(255, 255, 255, 0.4);
+          opacity: 0;
+          transition: 500ms;
+          .xmark{
+          
+           position: absolute;
+           right: -5px;
+           top: -5px;
+           color:#fff;
+           border-radius: 50%;
+           background-color: rgba(255, 255, 255, 0.5);
+           font-size: 20px;
+          }
+        
+          li{
+          
+            background-color: #1F1F1F;
+            display: flex;
+            margin: 8px 0;
+            gap: 8px;
+            align-items: center;
+            border-radius: 5px;
+            img{
+              width: 70px;
+              height: 40px;
+            }
+          }
+        }
+        .opacity{
+          opacity: 1;
+        }
       }
     }
   }
 }
+

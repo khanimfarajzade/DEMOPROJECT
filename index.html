@@ -4,54 +4,95 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assets/css/main.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-  <!-- <link rel="stylesheet" type="text/css" href="slick/slick.css" />  -->
-  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <!-- <link rel="stylesheet" type="text/css" href="slick/slick.css" />  -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
     <title>Demo</title>
   </head>
   <body>
-    <header>
-      
+    <header class="myHeader ">
       <div class="container">
+        <!-- navbar start -->
         <nav class="navbar">
+          <!-- left area -->
           <div class="leftArea">
             <div class="logo"><h2>LOGO</h2></div>
             <div class="menu">
-              <ul>
+              <ul class="menuList">
                 <li>Menu1</li>
                 <li>Menu2</li>
-                <li>
-                  TR
-  
-                  <!-- <select name="cars" id="cars">
-                                    <option value="volvo">TR</option>
-                                    <option value="saab">Saab</option>
-                                    <option value="mercedes">Mercedes</option>
-                                    <option value="audi">Audi</option>
-                                  </select> -->
+                <li id="lang">
+                  TR <i class="fa-solid fa-angle-down"></i></i>
+                 
+                                  <ul class="langList">
+                                    <li>Az</li>
+                                    <li>En</li>
+                                    <li>Fr</li>
+                                  </ul>
                 </li>
               </ul>
+              
             </div>
           </div>
+          <!-- left area end -->
+
+          <!-- right area -->
           <div class="rightArea">
-            <div class="watchlist">Watchlist</div>
+            <div class="watchlist"> <p class="watchlistP">Watchlist</p>
+              <ul class="movies">
+                <i class="fa-regular fa-circle-xmark xmark" id="xmarkWatch"></i>
+                <li><img src="./assets/imgs/Rectangle 57.png" alt="foto"> <p>The Witcher</p></li>
+                <li><img src="./assets/imgs/Rectangle7.png" alt="foto"> <p>The Queen Gambit</p></li>
+                <li><img src="./assets/imgs/Rectangle 57 (3).png" alt="foto"> <p>The Dark the knight</p></li>
+                <li><img src="./assets/imgs/Rectangle 57 (2).png" alt="foto"> <p>No time to day</p></li>
+              </ul>
+            </div>
             <div class="signIn">Sing In</div>
           </div>
+          <!-- right area end  -->
         </nav>
+        <!-- navbar end  -->
       </div>
-      
     </header>
+
+    <!-- main started -->
     <main>
+      <div class="signInWindow">
+        <i class="fa-regular fa-circle-xmark xmark" id="delet"></i>
+        <h2>Sign In</h2>
+        <p>Do you have an toog account</p>
+        <form action="">
+          <label for="email">Email</label>
+          <br>
+          <input type="email" placeholder="Enter email">
+          <br>
+          <label for="pass">Password</label>
+          <br>
+          <input type="password" placeholder="Enter password">
+           <p>Forgot password?</p>
+        </form>
+       <div class="SignUpDiv">
+        <a href="#" target="_blank">Sign Up</a>
+      <button>Sign In</button>
+    </div>
+      </div>
+      <!-- mainHeroSection startded -->
       <section id="mainHeroSection">
         <div class="container">
           <div class="mainCaruselContainer">
             <div class="card">
-              <img src="./assets/imgs/Images.png" alt="">
+              <img src="./assets/imgs/Images.png" alt="" />
               <div class="nameDate">
                 <p>Brave new world</p>
                 <p id="date">2018 12.00pm</p>
               </div>
-             
 
               <div class="buttonDiv">
                 <div class="wishlist">
@@ -66,12 +107,11 @@
               </div>
             </div>
             <div class="card">
-              <img src="./assets/imgs/Images.png" alt="">
+              <img src="./assets/imgs/Images.png" alt="" />
               <div class="nameDate">
                 <p>Vanguard</p>
                 <p id="date">2018 12.00pm</p>
               </div>
-             
 
               <div class="buttonDiv">
                 <div class="wishlist">
@@ -86,12 +126,11 @@
               </div>
             </div>
             <div class="card">
-              <img src="./assets/imgs/Images.png" alt="">
+              <img src="./assets/imgs/Images.png" alt="" />
               <div class="nameDate">
                 <p>Brave new world</p>
                 <p id="date">2018 12.00pm</p>
               </div>
-             
 
               <div class="buttonDiv">
                 <div class="wishlist">
@@ -106,12 +145,11 @@
               </div>
             </div>
             <div class="card">
-              <img src="./assets/imgs/Images.png" alt="">
+              <img src="./assets/imgs/Images.png" alt="" />
               <div class="nameDate">
                 <p>Bad Times At The El Roman</p>
                 <p id="date">2018 12.00pm</p>
               </div>
-             
 
               <div class="buttonDiv">
                 <div class="wishlist">
@@ -126,12 +164,11 @@
               </div>
             </div>
             <div class="card">
-              <img src="./assets/imgs/Images.png" alt="">
+              <img src="./assets/imgs/Images.png" alt="" />
               <div class="nameDate">
                 <p>Bad Times At The El Roman</p>
                 <p id="date">2018 12.00pm</p>
               </div>
-             
 
               <div class="buttonDiv">
                 <div class="wishlist">
@@ -148,12 +185,11 @@
           </div>
           <div class="slidesToShow">
             <div class="card">
-              <img src="./assets/imgs/Images.png" alt="">
+              <img src="./assets/imgs/Images.png" alt="" />
               <div class="nameDate">
                 <p>Brave new world</p>
                 <p id="date">2018 12.00pm</p>
               </div>
-             
 
               <div class="buttonDiv">
                 <div class="wishlist">
@@ -168,12 +204,11 @@
               </div>
             </div>
             <div class="card">
-              <img src="./assets/imgs/Images.png" alt="">
+              <img src="./assets/imgs/Images.png" alt="" />
               <div class="nameDate">
                 <p>Vanguard</p>
                 <p id="date">2018 12.00pm</p>
               </div>
-             
 
               <div class="buttonDiv">
                 <div class="wishlist">
@@ -188,12 +223,11 @@
               </div>
             </div>
             <div class="card">
-              <img src="./assets/imgs/Images.png" alt="">
+              <img src="./assets/imgs/Images.png" alt="" />
               <div class="nameDate">
                 <p>Brave new world</p>
                 <p id="date">2018 12.00pm</p>
               </div>
-             
 
               <div class="buttonDiv">
                 <div class="wishlist">
@@ -208,12 +242,11 @@
               </div>
             </div>
             <div class="card">
-              <img src="./assets/imgs/Images.png" alt="">
+              <img src="./assets/imgs/Images.png" alt="" />
               <div class="nameDate">
                 <p>Bad Times At The El Roman</p>
                 <p id="date">2018 12.00pm</p>
               </div>
-             
 
               <div class="buttonDiv">
                 <div class="wishlist">
@@ -228,12 +261,11 @@
               </div>
             </div>
             <div class="card">
-              <img src="./assets/imgs/Images.png" alt="">
+              <img src="./assets/imgs/Images.png" alt="" />
               <div class="nameDate">
                 <p>Bad Times At The El Roman</p>
                 <p id="date">2018 12.00pm</p>
               </div>
-             
 
               <div class="buttonDiv">
                 <div class="wishlist">
@@ -249,29 +281,35 @@
             </div>
           </div>
         </div>
-       
-        
-
       </section>
+      <!-- mainHeroSection ended -->
+
     </main>
-
-
-
-    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <!-- main ended  -->
+<script src="./assets/js/app.js"></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
     <script type="text/javascript">
       $(document).ready(function () {
         $(".mainCaruselContainer").slick({
           infinite: true,
           slidesToShow: 4,
           slidesToScroll: 4,
-          prevArrow:`<button class="slick-prev"> <i class="fa-solid fa-chevron-left"></i></button>`,
-          nextArrow:`<button class="slick-next"> <i class="fa-solid fa-chevron-right"></i> </button>`,
-         // arrows: true,
-         // dots: true,
-   
-    
+          prevArrow: `<button class="slick-prev"> <i class="fa-solid fa-chevron-left"></i></button>`,
+          nextArrow: `<button class="slick-next"> <i class="fa-solid fa-chevron-right"></i> </button>`,
+          // arrows: true,
+          // dots: true,
+
           responsive: [
             {
               breakpoint: 769,
@@ -279,9 +317,7 @@
                 infinite: true,
                 slidesToShow: 2,
                 slidesToScroll: 2,
-  
-              }
-  
+              },
             },
             {
               breakpoint: 545,
@@ -289,25 +325,19 @@
                 infinite: true,
                 slidesToShow: 1,
                 slidesToScroll: 1,
-  
-              }
-  
-            }
-  
-  
-          ]
-  
+              },
+            },
+          ],
         });
         $(".slidesToShow").slick({
           infinite: true,
           slidesToShow: 4,
           slidesToScroll: 4,
-          prevArrow:`<button class="slick-prev">  <i class="fa-solid fa-chevron-left"></i> </button>`,
-          nextArrow:`<button class="slick-next">  <i class="fa-solid fa-chevron-right"></i> </button>`,
-         // arrows: true,
-         // dots: true,
-   
-    
+          prevArrow: `<button class="slick-prev">  <i class="fa-solid fa-chevron-left"></i> </button>`,
+          nextArrow: `<button class="slick-next">  <i class="fa-solid fa-chevron-right"></i> </button>`,
+          // arrows: true,
+          // dots: true,
+
           responsive: [
             {
               breakpoint: 769,
@@ -315,9 +345,7 @@
                 infinite: true,
                 slidesToShow: 2,
                 slidesToScroll: 2,
-  
-              }
-  
+              },
             },
             {
               breakpoint: 545,
@@ -325,14 +353,9 @@
                 infinite: true,
                 slidesToShow: 1,
                 slidesToScroll: 1,
-  
-              }
-  
-            }
-  
-  
-          ]
-  
+              },
+            },
+          ],
         });
       });
     </script>

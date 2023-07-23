@@ -1,4 +1,73 @@
+.signInWindow{
+  transition: 500ms;
+  opacity: 0;
+  font-weight: bold;
+  gap: 20px;
+  color: #ffffff;
+ //margin: 0 auto;
+ padding-top: 20px;
+ display: flex;
+ flex-direction: column;
+ //justify-content: center;
+ align-items: center;
+ top: 50%;
+ left: 50%;
+  transform: translate(-50% ,-50%);
+  z-index: 1;
+  position: absolute;
+  width: 400px;
+  height: 450px;
+  border-radius: 15px;
+  border: none;
+  //background-color: rgba(255, 255, 255, 0.45);
+// background-color: rgba(93, 99, 102, 0.8);
+ background-image: linear-gradient(to right, rgba(255, 255, 255, 0.45),  rgba(93, 99, 102, 0.5)) ;
+  #delet{
+   position: absolute;
+   right: -5px;
+   top: -7px;
+   font-size: 24px;
+   background-color:  rgba(93, 99, 102, 0.5);
+   border-radius: 50%;
+  }
+ input{
+    height: 40px;
+    width: 300px;
+    background-color: #0D0D0D;
+    border: none;
+    border-radius: 8px;
+    padding-left: 8px;
+    margin:10px 0;
+   
+  }
+  input::placeholder{
+    color: #ffffff;
+ 
+  }
+  .SignUpDiv{
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    button{
+      background-color: rgba(255, 255, 255, 0.1);
+      width: 134px;
+      height: 40px;
+      border: 1px solid #0ff7f0;
+      border-radius: 30px;
+      text-transform: uppercase;
+      color: #fff;
+     
+    }
+  }
+}
+.view{
+  opacity: 1;
+}
+
 #mainHeroSection {
+ // opacity: 0.8;
   background-color: #1f1f1f;
   color: #ffffff;
 
@@ -99,3 +168,9 @@
     }
   }
 }
+
+.myOpacity{
+  opacity: 0.8;
+}
+
+
