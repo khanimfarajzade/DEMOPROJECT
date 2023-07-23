@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+}
+
+.container {
+  max-width: 1450px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+header {
+  height: 320px;
+  background-image: url("../imgs/Header-Area.png");
+  background-position: center;
+  background-size: cover;
+  color: #ffffff;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+header .navbar {
+  padding-top: 50px;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+header .navbar .leftArea,
+header .navbar .rightArea {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+header .navbar .leftArea ul,
+header .navbar .rightArea ul {
+  display: flex;
+  gap: 10px;
+}
+header .navbar .leftArea .menu,
+header .navbar .leftArea .watchlist,
+header .navbar .leftArea .signIn,
+header .navbar .rightArea .menu,
+header .navbar .rightArea .watchlist,
+header .navbar .rightArea .signIn {
+  border-radius: 10px;
+  padding: 10px;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+#mainHeroSection {
+  background-color: #1f1f1f;
+  color: #ffffff;
+}
+#mainHeroSection .mainCaruselContainer,
+#mainHeroSection .slidesToShow {
+  position: relative;
+  display: flex;
+}
+#mainHeroSection .mainCaruselContainer .card,
+#mainHeroSection .slidesToShow .card {
+  transition: 500ms;
+  margin: 10px;
+}
+#mainHeroSection .mainCaruselContainer .card .nameDate,
+#mainHeroSection .slidesToShow .card .nameDate {
+  margin: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+#mainHeroSection .mainCaruselContainer .card .nameDate #date,
+#mainHeroSection .slidesToShow .card .nameDate #date {
+  display: none;
+}
+#mainHeroSection .mainCaruselContainer .card .buttonDiv,
+#mainHeroSection .slidesToShow .card .buttonDiv {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  height: 50px;
+}
+#mainHeroSection .mainCaruselContainer .card .buttonDiv div i,
+#mainHeroSection .slidesToShow .card .buttonDiv div i {
+  height: 30px;
+  width: 30px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#mainHeroSection .mainCaruselContainer .card .buttonDiv div #play,
+#mainHeroSection .slidesToShow .card .buttonDiv div #play {
+  background-image: linear-gradient(#0ff7f0, #d686ff);
+}
+#mainHeroSection .mainCaruselContainer .card:hover,
+#mainHeroSection .slidesToShow .card:hover {
+  scale: 1.2 1.1;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+#mainHeroSection .mainCaruselContainer .card:hover #date,
+#mainHeroSection .slidesToShow .card:hover #date {
+  display: block;
+}
+#mainHeroSection .mainCaruselContainer .card:hover .buttonDiv,
+#mainHeroSection .slidesToShow .card:hover .buttonDiv {
+  display: flex;
+}
+#mainHeroSection .mainCaruselContainer .slick-prev,
+#mainHeroSection .mainCaruselContainer .slick-next,
+#mainHeroSection .slidesToShow .slick-prev,
+#mainHeroSection .slidesToShow .slick-next {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  height: 70px;
+  width: 70px;
+  position: absolute;
+  z-index: 1;
+  top: 55px;
+  border: none;
+  border-radius: 50%;
+  /* position: absolute;
+          display: block;
+          height: 20px;
+          width: 30px;
+          line-height: 0px;
+          font-size: 0px;
+          cursor: pointer;
+          background: transparent;
+          color: transparent;
+          top: 50%;
+          margin-top: -10px;
+          padding: 0;
+          border: none;
+          outline: none; */
+}
+#mainHeroSection .mainCaruselContainer .slick-prev i,
+#mainHeroSection .mainCaruselContainer .slick-next i,
+#mainHeroSection .slidesToShow .slick-prev i,
+#mainHeroSection .slidesToShow .slick-next i {
+  font-size: 20px;
+}
+#mainHeroSection .mainCaruselContainer .slick-prev,
+#mainHeroSection .slidesToShow .slick-prev {
+  left: 25px;
+}
+#mainHeroSection .mainCaruselContainer .slick-next,
+#mainHeroSection .slidesToShow .slick-next {
+  right: 25px;
+}

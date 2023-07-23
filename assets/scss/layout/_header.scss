@@ -1,0 +1,42 @@
+header {
+ // padding: 100px 0;
+   height: 320px;
+  background-image: url("../imgs/Header-Area.png");
+  background-position: center;
+  background-size: cover;
+  color: #ffffff;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  .navbar {
+    padding-top: 50px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    .leftArea,
+    .rightArea {
+      align-items: center;
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      ul {
+        display: flex;
+        gap: 10px;
+      }
+      .menu,
+      .watchlist,
+      .signIn {
+        border-radius: 10px;
+        padding: 10px;
+        border: none;
+        //border: 2px solid #fff;
+        background-color: rgba(255, 255, 255, 0.3);
+        //background-color: #FFFFFF;
+        // opacity: 0.5;
+
+        //          border-image: linear-gradient( #0FF7F0 , #D686FF) 40;
+        //          border-width: 4px;
+
+        // border-style: solid;
+      }
+    }
+  }
+}
