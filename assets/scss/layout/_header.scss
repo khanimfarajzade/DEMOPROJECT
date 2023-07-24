@@ -131,10 +131,13 @@ header {
         
         justify-content: space-between;
         display: none;
-        padding-top: 40px;
+        //padding-top: 40px;
         padding-bottom: 20px;
         li{
           margin: 10px 0;
+        }
+        h2{
+          margin-top: 20px;
         }
         select{
           

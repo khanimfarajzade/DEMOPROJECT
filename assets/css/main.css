@@ -158,11 +158,13 @@ header .mobilNavbar {
     flex-direction: column;
     justify-content: space-between;
     display: none;
-    padding-top: 40px;
     padding-bottom: 20px;
   }
   header .mobilNavbar .leftMenu li {
     margin: 10px 0;
+  }
+  header .mobilNavbar .leftMenu h2 {
+    margin-top: 20px;
   }
   header .mobilNavbar .leftMenu select {
     border: none;
