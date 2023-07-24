@@ -1,4 +1,6 @@
-.signInWindow {
+//signInWindow start
+
+.signInWindow ,.signUp {
   transition: 500ms;
   //opacity: 0;
   display: none;
@@ -22,10 +24,10 @@
   // background-color: rgba(93, 99, 102, 0.8);
   background-image: linear-gradient(
     to right,
-    rgba(255, 255, 255, 0.45),
-    rgba(93, 99, 102, 0.5)
+    rgb(182, 186, 189, 0.9),
+    rgba(182, 186, 189, 0.8 )
   );
-  #delet {
+  #delet ,#delete {
     position: absolute;
     right: -5px;
     top: -7px;
@@ -41,6 +43,7 @@
     border-radius: 8px;
     padding-left: 8px;
     margin: 10px 0;
+    color: #ffffff;
   }
   input::placeholder {
     color: #ffffff;
@@ -51,6 +54,9 @@
     justify-content: space-between;
     align-items: center;
     color: #fff;
+    a{
+      text-shadow: 2px 2px 2px  #808080
+    }
     button {
       background-color: rgba(255, 255, 255, 0.1);
       width: 134px;
@@ -62,11 +68,23 @@
     }
   }
 }
-.view {
-  //opacity: 1;
-  display: flex;
+.signUp{
+  //display: block;
+  text-align: center;
+  button{
+    background-color: rgba(255, 255, 255, 0.1);
+      width: 134px;
+      height: 40px;
+      border: 1px solid #0ff7f0;
+      border-radius: 30px;
+      text-transform: uppercase;
+      color: #fff;
+  }
 }
 
+//signInWindow end
+
+// mainHeroSection start
 #mainHeroSection {
   // opacity: 0.8;
   background-color: #1f1f1f;
@@ -108,8 +126,17 @@
             align-items: center;
             justify-content: center;
           }
+          
           #play {
+            height: 35px;
+            width: 35px;
             background-image: linear-gradient(#0ff7f0, #d686ff);
+          }
+          .red{
+            color: #ff0000;
+          }
+          .black{
+           color: #000000;
           }
         }
       }
@@ -167,6 +194,13 @@
       right: 25px;
     }
   }
+}
+// mainHeroSection end
+
+// js classlar
+.view {
+ 
+  display: flex;
 }
 
 .myOpacity {
