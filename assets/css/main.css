@@ -159,7 +159,7 @@ header .mobilNavbar {
     flex-direction: column;
     justify-content: space-between;
     display: none;
-    padding-bottom: 20px;
+    padding-bottom: 50px;
   }
   header .mobilNavbar .leftMenu li {
     margin: 10px 0;
