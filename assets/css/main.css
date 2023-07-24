@@ -143,6 +143,7 @@ header .mobilNavbar {
     display: flex;
     justify-content: space-between;
     position: relative;
+    height: 100vh;
   }
   header .mobilNavbar .hamburger {
     font-size: 24px;
@@ -151,7 +152,7 @@ header .mobilNavbar {
     position: absolute;
     background-color: #000000;
     width: 240px;
-    height: 100vh;
+    height: 100%;
     top: 0;
     left: 0;
     z-index: 1;
