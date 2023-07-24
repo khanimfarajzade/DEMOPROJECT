@@ -31,3 +31,14 @@ signIn.addEventListener("click" , function () {
 });
 
 
+// responsiv nav js
+const hamburger = document.querySelector(".hamburger");
+
+hamburger.addEventListener("click" , function () {
+    const leftMenu = document.querySelector(".leftMenu");
+    leftMenu.classList.toggle("myDisplay");
+    
+})
+
+
+

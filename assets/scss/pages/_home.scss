@@ -1,18 +1,17 @@
-.signInWindow{
+.signInWindow {
   transition: 500ms;
-  opacity: 0;
+  //opacity: 0;
+  display: none;
   font-weight: bold;
   gap: 20px;
   color: #ffffff;
- //margin: 0 auto;
- padding-top: 20px;
- display: flex;
- flex-direction: column;
- //justify-content: center;
- align-items: center;
- top: 50%;
- left: 50%;
-  transform: translate(-50% ,-50%);
+  padding-top: 20px;
+  flex-direction: column;
+  //justify-content: center;
+  align-items: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   z-index: 1;
   position: absolute;
   width: 400px;
@@ -20,37 +19,39 @@
   border-radius: 15px;
   border: none;
   //background-color: rgba(255, 255, 255, 0.45);
-// background-color: rgba(93, 99, 102, 0.8);
- background-image: linear-gradient(to right, rgba(255, 255, 255, 0.45),  rgba(93, 99, 102, 0.5)) ;
-  #delet{
-   position: absolute;
-   right: -5px;
-   top: -7px;
-   font-size: 24px;
-   background-color:  rgba(93, 99, 102, 0.5);
-   border-radius: 50%;
+  // background-color: rgba(93, 99, 102, 0.8);
+  background-image: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0.45),
+    rgba(93, 99, 102, 0.5)
+  );
+  #delet {
+    position: absolute;
+    right: -5px;
+    top: -7px;
+    font-size: 24px;
+    background-color: rgba(93, 99, 102, 0.5);
+    border-radius: 50%;
   }
- input{
+  input {
     height: 40px;
     width: 300px;
-    background-color: #0D0D0D;
+    background-color: #0d0d0d;
     border: none;
     border-radius: 8px;
     padding-left: 8px;
-    margin:10px 0;
-   
+    margin: 10px 0;
   }
-  input::placeholder{
+  input::placeholder {
     color: #ffffff;
- 
   }
-  .SignUpDiv{
+  .SignUpDiv {
     width: 300px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     color: #fff;
-    button{
+    button {
       background-color: rgba(255, 255, 255, 0.1);
       width: 134px;
       height: 40px;
@@ -58,22 +59,22 @@
       border-radius: 30px;
       text-transform: uppercase;
       color: #fff;
-     
     }
   }
 }
-.view{
-  opacity: 1;
+.view {
+  //opacity: 1;
+  display: flex;
 }
 
 #mainHeroSection {
- // opacity: 0.8;
+  // opacity: 0.8;
   background-color: #1f1f1f;
   color: #ffffff;
 
   .mainCaruselContainer,
   .slidesToShow {
-     position: relative;
+    position: relative;
     display: flex;
     //align-items: center;
 
@@ -114,7 +115,7 @@
       }
     }
     .card:hover {
-        scale: 1.2 1.1;
+      scale: 1.2 1.1;
       border-bottom-left-radius: 10px;
       border-bottom-right-radius: 10px;
       background-color: rgba(255, 255, 255, 0.1);
@@ -124,7 +125,6 @@
       }
       .buttonDiv {
         display: flex;
-       
       }
     }
 
@@ -137,7 +137,7 @@
       width: 70px;
       position: absolute;
       z-index: 1;
-       top: 55px;
+      top: 55px;
       border: none;
       border-radius: 50%;
       i {
@@ -169,8 +169,6 @@
   }
 }
 
-.myOpacity{
+.myOpacity {
   opacity: 0.8;
 }
-
-
