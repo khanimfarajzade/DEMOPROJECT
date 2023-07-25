@@ -41,7 +41,7 @@ registerForm.addEventListener("submit", (e) => {
 
 
     if (pass.value !== confirmPass.value) {
-      alert("Password or login is not true");
+      alert("Password is not true");
     } else if (register_result) {
       alert("user already exists");
     } else {

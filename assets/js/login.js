@@ -14,7 +14,7 @@ formMy.addEventListener("submit", function (e)  {
   for (let i = 0; i < arr.length; i++) {
    console.log("arr deyer",arr[i].name);
    console.log("input deyer" ,userL.value); 
-    result = userL.value === arr[i].name && passL.value === arr[i].passL;
+    result = userL.value === arr[i].name && passL.value === arr[i].pass;
     
   }
 
@@ -22,7 +22,10 @@ formMy.addEventListener("submit", function (e)  {
   if (result) {
     alert('welcome to demo')
     signInWindow.classList.remove("view");
-   // window.open('basket.html', '_blank');
+    mainHeroSection.classList.remove("myOpacity");
+    header.classList.remove("myOpacity");
+    signUp.style.display ="none";
+  
   } else{
      alert("User not found");
    }

@@ -27,8 +27,9 @@ header {
           gap: 10px;
           #lang:hover {
             .langList {
-              height: 60px;
+              height: 75px;
               background-color: rgba(255, 255, 255, 0.3);
+              width: 70px;
               li:hover {
                 color: #0ff7f0;
               }
@@ -62,6 +63,7 @@ header {
       }
       .watchlist{
         position: relative;
+        
         
         .movies{
           border-radius: 10px;
