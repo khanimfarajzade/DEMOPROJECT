@@ -12,22 +12,18 @@ formMy.addEventListener("submit", function (e)  {
   console.log("done");
 
   for (let i = 0; i < arr.length; i++) {
-   console.log("add",arr[i].name);
-   console.log("nebilime" ,userL.value); 
+   console.log("arr deyer",arr[i].name);
+   console.log("input deyer" ,userL.value); 
     result = userL.value === arr[i].name && passL.value === arr[i].passL;
     
   }
 
 
   if (result) {
+    alert('welcome to demo')
     signInWindow.classList.remove("view");
    // window.open('basket.html', '_blank');
-  }
-   //else if (userL.value === "admin" && passL.value === "admin1234") {
-  // window.open('admin.html', '_blank');
-  //     //alert("welcome to admin");
- //}
-   else{
+  } else{
      alert("User not found");
    }
 });
